@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', 'Hind Siliguri', system-ui, -apple-system, sans-serif;
+  }
+  
+  code, pre, .font-mono {
+    font-family: 'Fira Code', monospace;
+  }
+}
+
+/* Custom Cyberpunk & Terminal Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(3, 7, 18, 0.9);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(239, 68, 68, 0.4);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(239, 68, 68, 0.8);
+}
+
+/* Futuristic Theme Auras & Glows */
+.theme-inferno {
+  --primary-glow: rgba(239, 68, 68, 0.5);
+  --primary-accent: #ef4444;
+  --secondary-accent: #b91c1c;
+  --bg-gradient: radial-gradient(circle at 50% 0%, rgba(220, 38, 38, 0.15), transparent 70%);
+}
+
+.theme-cyan {
+  --primary-glow: rgba(6, 182, 212, 0.5);
+  --primary-accent: #06b6d4;
+  --secondary-accent: #0284c7;
+  --bg-gradient: radial-gradient(circle at 50% 0%, rgba(6, 182, 212, 0.15), transparent 70%);
+}
+
+.theme-purple {
+  --primary-glow: rgba(168, 85, 247, 0.5);
+  --primary-accent: #a855f7;
+  --secondary-accent: #7e22ce;
+  --bg-gradient: radial-gradient(circle at 50% 0%, rgba(168, 85, 247, 0.15), transparent 70%);
+}
+
+.theme-emerald {
+  --primary-glow: rgba(16, 185, 129, 0.5);
+  --primary-accent: #10b981;
+  --secondary-accent: #047857;
+  --bg-gradient: radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.15), transparent 70%);
+}
+
+.theme-gold {
+  --primary-glow: rgba(245, 158, 11, 0.5);
+  --primary-accent: #f59e0b;
+  --secondary-accent: #b45309;
+  --bg-gradient: radial-gradient(circle at 50% 0%, rgba(245, 158, 11, 0.15), transparent 70%);
+}
+
+/* Radar pulse animation */
+@keyframes radar-sweep {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-radar {
+  animation: radar-sweep 3s linear infinite;
+}
+
+/* Hologram rotation animation */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+@keyframes reverse-spin-slow {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+.animate-reverse-spin-slow {
+  animation: reverse-spin-slow 15s linear infinite;
+}
+
+/* Fierce Pulsing Glowing Effects */
+.glow-blood-red {
+  box-shadow: 0 0 35px -5px rgba(239, 68, 68, 0.45);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 35px -5px rgba(6, 182, 212, 0.45);
+}
+
+.glow-purple {
+  box-shadow: 0 0 35px -5px rgba(168, 85, 247, 0.45);
+}
+
+.glow-emerald {
+  box-shadow: 0 0 35px -5px rgba(16, 185, 129, 0.45);
+}
+
+.glow-gold {
+  box-shadow: 0 0 35px -5px rgba(245, 158, 11, 0.45);
+}
+
+/* Cyber Matrix Rain overlay */
+.matrix-grid {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Threat strobe pulse */
+@keyframes threat-pulse {
+  0%, 100% { opacity: 1; filter: drop-shadow(0 0 15px rgba(239, 68, 68, 0.8)); }
+  50% { opacity: 0.7; filter: drop-shadow(0 0 5px rgba(239, 68, 68, 0.3)); }
+}
+
+.animate-threat {
+  animation: threat-pulse 1.5s ease-in-out infinite;
+}

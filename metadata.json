@@ -1,0 +1,8 @@
+{
+  "name": "Remix OmniMind OS - সর্বশক্তিমান এআই মাস্টার হাব",
+  "description": "সার্বভৌম কৃত্রিম বুদ্ধিমত্তা হাব - স্বয়ংক্রিয় ওয়েব অ্যাপ ক্রিয়েটর ও স্যান্ডবক্স, এডমিন কন্ট্রোল, নেটওয়ার্ক ও ওয়াইফাই সেন্টিনেল, কলার ট্র্যাকার ও ফুল ডিভাইস রিমোট অটোমেশন।",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
